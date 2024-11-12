@@ -77,91 +77,6 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title"> <a style="color:#D46EE8">DrivingWorld</a>:  Constructing World Model for Autonomous Driving via Video GPT</h1>
-            <!-- <div class="is-size-5 publication-authors"> -->
-              <!-- Paper authors -->
-              <!-- <span class="author-block">
-                <a href="https://huxiaotaostasy.github.io/" target="_blank">Xiaotao Hu<sup>1,2,*</sup></a>,</span>
-                <span class="author-block"> -->
-
-                <!-- <a href="https://yvanyin.net/" target="_blank">Wei Yin<sup>2,*</sup></a>,</span>
-                <span class="author-block">
-
-                <a href="https://scholar.google.com/citations?user=fcpTdvcAAAAJ&hl=en&oi=ao" target="_blank">Mingkai Jia<sup>1,2</sup></a>,</span>
-                <span class="author-block">
-
-                <a href="#" target="_blank">Junyuan Deng<sup>1,2</sup></a>,</span>
-                <span class="author-block">
-
-                <a href="https://scholar.google.com/citations?user=CrK4w4UAAAAJ&hl=en&oi=ao" target="_blank">Xiaoyang Guo<sup>2</sup></a>,</span>
-                <span class="author-block">
-
-                <a href="https://scholar.google.com/citations?hl=en&user=pCY-bikAAAAJ" target="_blank">Qian Zhang<sup>2</sup></a>,</span>
-                <span class="author-block">
-
-                <a href="https://www.xxlong.site/" target="_blank">Xiaoxiao Long<sup>1,†</sup></a>,</span>
-                <span class="author-block">
-
-                <a href="https://scholar.google.com/citations?user=XhyKVFMAAAAJ&hl=en&oi=ao" target="_blank">Ping Tan<sup>1</sup></a></span>
-                <span class="author-block">
-
-                </div> -->
-
-                  <!-- <div class="is-size-5 publication-authors">
-                    <span class="author-block">
-                      <sup>1</sup> Hong Kong University of Science and Technology |  <sup>2</sup>Horizon Robotics <br>
-                    </span>
-                    <span class="eql-cntrb">
-                      <small><br><sup>*</sup>denotes equal contribution | </small>
-                      <small><sup>†</sup>denotes Corresponding authors</small>
-                    </span>
-                  </div> -->
-                  
-
-                  <!-- <div class="column has-text-centered">
-                    <div class="publication-links"> -->
-                         <!-- Arxiv PDF link -->
-                      <!-- <span class="link-block">
-                        <a href="#" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span> -->
-
-                    <!-- Supplementary PDF link -->
-                    <!-- <span class="link-block">
-                      <a href="http://www.semantic-kitti.org/" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-database"></i>
-                      </span>
-                      <span>Dataset</span>
-                    </a>
-                  </span> -->
-
-                  <!-- Github link -->
-                  <!-- <span class="link-block">
-                    <a href="#" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span> -->
-
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="#" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-video"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
             </div>
           </div>
         </div>
@@ -171,115 +86,19 @@
 </section>
 
 
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body"> -->
-      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/output.mp4"
-        type="video/mp4">
-      </video> -->
-      <!-- <br>
-      <br>
-      <br> -->
-      <!-- <h2 class="subtitle has-text-left">
-        <p>An example of controllable generation. We design two trajectories for the same scene to generate different driving scenarios, <em>i.e.</em>, one moving straight forward and the other with a curved path.</p>
-      </h2> -->
-      <!--div class="columns is-centered mb-6">
-        <div class="column is-full has-text-centered">
-          <img class="my-image-size" src="static/images/2.png" alt="Overview Image">
-          <h3 class="subtitle" style="font-size: 1.5rem; font-weight: normal;color:#D46EE8;">Comparison of Performance (i.e. collision rate), Efficiency (i.e. FPS), and Comfort Metrics</h3>
-        </div>
-      </div-->
-
-
-    <!-- </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<!-- <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Recent successes in autoregressive (AR) generation models, such as the GPT series in natural language processing, have motivated efforts to replicate this success in visual tasks. 
-            Some research aims to extend this approach to autonomous driving by building video-based world models capable of generating realistic future video sequences and predicting the ego states.
-            However, the prior works tend to produce unsatisfactory results, since the classic GPT framework is designed to handle 1D contextual information, such as text, and lacks the inherent capability to model the spatial and temporal dynamics necessary for video generation.
-            </p>
-            
-            <p>
-            In this paper, we present DrivingWorld, a GPT-style world model for autonomous driving with several spatial-temporal fusion mechanisms. This design allows for effective modeling of both spatial and temporal dynamics, enabling high-fidelity, long time video generation.
-            Specifically, we first propose next-state-prediction strategy to model temporal coherence between consecutive frames and then apply next-token-prediction strategy to capture spatial information within a frame. To further enhance generalization ability, we propose a novel masking strategy and reweight strategy for token prediction to mitigate long time drifting issues and enable precise control.
-            Our work is capable of producing high-fidelity and consistent video clips with long-time duration. 
-            </p>
-            
-            <p>
-            Experiments demonstrate that, in contrast to prior works, our method delivers superior visual quality and significantly more accurate controllable future video generation.
-            </p>
-             <br>
-          </div>
-      </div>
-    </div>
-  </div> -->
-
-
-
-
-<!-- <section class="section hero is-white">
-  <div class="container is-max-desktop"> -->
-
-    <!-- Row 1: Overview -->
-    <!-- <div class="columns is-centered mb-6">
-      <div class="column is-full has-text-centered">
-        <img class="my-image-size" src="static/images/pipeline-1.png" alt="Overview Image">
-        <h3 class="subtitle" style="font-size: 1.5rem; font-weight: normal;color:#D46EE8;">DrivingWorld Overview</h3>
-      </div>
-    </div>
-    <br> -->
-    <!-- Row Title: OccRWKV Key Components -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full">
-        <h2 class="title is-3">The World Model Component</h2>
-      </div>
-    </div> -->
-
-    
-
-    <!-- Row 2: Block -->
-    <!-- <div class="columns is-centered mb-6">
-      <div class="column is-full has-text-centered">
-        <img class="my-image-size" src="static/images/structure-1.png" alt="Block Image">
-        <h3 class="subtitle" style="font-size: 1.5rem; font-weight: normal;color:#D46EE8;"> Inference Illustration of Vanilla GPT and Temporal-aware GPT (Ours).</h3>
-      </div>
-    </div>
-    <br> -->
-
-
-  <!-- </div> 
-</section> -->
-
 <section class="section hero is-light">
   <div class="container is-max-desktop">
 
-    <!-- Row Title: OccRWKV Key Components -->
     <div class="columns is-centered">
       <div class="column is-full">
         <h2 class="title is-3">Experiment 1: Controllable Generation</h2>
       </div>
     </div>
 
-    <!-- <p>
-      In following examples, we designed multiple trajectories for the ego car, which can generate different driving scenarios.
-    </p> -->
     <h2 style="margin-top: 10px;" class="subtitle has-text-left">
       <p>In following examples, we designed multiple trajectories for the ego car, which can generate different driving scenarios.</p>
     </h2>
 
-    <!-- Two Columns for Parallel Display -->
     <div class="columns is-centered mb-6">
         <body>
           <video style="padding-top: 50px;" poster="" id="tree" autoplay controls muted loop height="100%">
@@ -355,35 +174,15 @@
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-
-    <!-- Row Title: OccRWKV Key Components -->
     <div class="columns is-centered">
       <div class="column is-full">
         <h2 class="title is-3">Experiment 2: Long-term Generation</h2>
       </div>
     </div>
 
-    <!-- <p>
-      In following examples, we present multiple different long-term generations. Each generated videos contains over 600 frames.
-    </p> -->
     <h2 style="margin-top: 10px;" class="subtitle has-text-left">
       <p>In following examples, we present multiple different long-term generations. Each generated videos contains over 600 frames.</p>
     </h2>
-
-    <!-- Two Columns for Parallel Display -->
-    <!-- <div class="columns is-centered mb-6"> -->
-        <!-- <body> -->
-          <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
-            <!-- Your video here -->
-            <!-- <source src="static/videos/long_term_1.mp4"
-            type="video/mp4"> -->
-          <!-- </video> -->
-        <!-- </body> -->
-    <!-- </div> -->
-
-    <!-- <h2 class="subtitle has-text-left"> -->
-      <!-- <p></p> -->
-    <!-- </h2> -->
 
 
 <div class="columns is-centered mb-6">
@@ -396,10 +195,6 @@
   </body>
 </div>
 
-<!-- <h2 class="subtitle has-text-left"> -->
-<!-- <p>An example of controllable generation. We design two trajectories for the same scene to generate different driving scenarios, <em>i.e.</em>, one moving straight forward and the other with a curved path.</p> -->
-<!-- </h2> -->
-
 
 <div class="columns is-centered mb-6">
   <body>
@@ -411,9 +206,6 @@
   </body>
 </div>
 
-<!-- <h2 class="subtitle has-text-left"> -->
-<!-- <p>An example of controllable generation. We design two trajectories for the same scene to generate different driving scenarios, <em>i.e.</em>, one moving straight forward and the other with a curved path.</p> -->
-<!-- </h2> -->
 
 <div class="columns is-centered mb-6">
 <body>
@@ -425,54 +217,9 @@
 </body>
 </div>
 
-<!-- <h2 class="subtitle has-text-left"> -->
-<!-- <p>An example of controllable generation. We design two trajectories for the same scene to generate different driving scenarios, <em>i.e.</em>, one moving straight forward and the other with a curved path.</p> -->
-<!-- </h2> -->
 
   </div>
 </section>
-
-
-
-<!--BibTex citation -->
-<!-- <section class="section is-white" id="BibTeX" >
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>
-      @article{wang2024occrwkv,
-        title={OccRWKV: Rethinking Efficient 3D Semantic Occupancy Prediction with Linear Complexity},
-        author={Wang, Junming and Yin, Wei and Long, Xiaoxiao and Zhang, Xinyu and Xing, Zebing and Guo, Xiaoyang and Qian, Zhang},
-        year={2024}
-              } 
-  </code></pre>
-  </div>
-</section> -->
-<!--End BibTex citation -->
-
-
-  <!-- <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
